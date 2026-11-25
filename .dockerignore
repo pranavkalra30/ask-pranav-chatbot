@@ -1,0 +1,20 @@
+# Local virtual environment (huge, and built for macOS, not Linux)
+.venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Secrets must never be baked into an image
+.env
+
+# Git history and editor/OS junk
+.git/
+.gitignore
+.DS_Store
+.vscode/
+
+# Docker files themselves aren't needed inside the image
+Dockerfile
+.dockerignore
+docker-compose.yml
